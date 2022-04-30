@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Choropleth Map of COVID-19 Cases in US</title>
+    <title></title>
     <meta name="robots" content="noindex, nofollow" />
     <meta
       name="viewport"
@@ -89,13 +89,13 @@
       });
 
       // wait for map to load before adjusting it
-      map.on('load', () => {
+      map.on('load', function() {
 
-        map.addSource('covid-cases', {
+        map.addSource('statedata', {
                 type: 'geojson',
-                data: 'assets/us-covid-2020-counts.json'
+                data: 'assets/us-covid-2020-rates.json'
             });
-        
+
         // set map bounds to the continental US
         map.fitBounds([
           [-133.2421875, 16.972741],
@@ -146,11 +146,11 @@
         // change info window on hover
         map.on('mousemove', function(e) {
           var states = map.queryRenderedFeatures(e.point, {
-            layers: ['statesdata']
+            layers: ['statedata']
           });
 
           if (states.length > 0) {
-            document.getElementById('cases').innerHTML =
+            document.getElementById('pd').innerHTML =
               '<h3><strong>' +
               states[0].properties.name +
               '</strong></h3><p><strong><em>' +
