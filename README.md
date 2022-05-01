@@ -14,7 +14,7 @@ The first map is an interactive choropleth map that displays counts of positive 
 
 [COVID-19 Proportional Symbols Map](https://jpalag.github.io/covidmaps2020/map2.html)
 
-![Map 2](img/map2.png)
+![Map 1](img/map1.png)
 
 The second map is an interactive proportional symbol map that uses circles varying in size and color to depict the magnitude of COVID-19 cases in that area. The legend displays what each size circle represents. Smaller circles are lower COVID-19 rates, while larger circles are higher rates. 
 
