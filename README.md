@@ -7,7 +7,7 @@ In this lab assignment, I create thematic maps depicting COVID-19 cases in the U
 
 [COVID-19 Choropleth Map](https://jpalag.github.io/covidmaps2020/map1.html)
 
-![Map 1](img/map1.png)
+![Map 2](img/map2.png)
 
 
 The first map is an interactive choropleth map that displays counts of positive COVID-19 cases at the county-level in the United States. Darker shades of red/orange shows a higher volume of COVID-19 cases, while lighter colored areas mean less. Hovering over any county will provide a pop-up window where you can see specifics on that county, such as the populations, positve cases, rate, and deaths. The legend also provides informations on how each color represents a certain number within an interval of positive cases. 
